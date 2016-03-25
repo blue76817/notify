@@ -1,0 +1,19 @@
+<div id="event_article">
+  <h1>
+    <%= @event.name %>
+  </h1>
+  <p>
+    <%= @event.content %>
+  </p>
+  <div id="articles">
+
+
+
+  </div>
+  <br/>
+  <hr/>
+  <br/>
+  <%= link_to "Edit", edit_event_path(@event), class: "button" %>
+  <%= link_to "Delete", event_path(@event), method: :delete, data: { confirm: "確定刪除?" }, class: "button" %>
+  <%= link_to "Home", root_path(@event), class: "button" %>
+</div>

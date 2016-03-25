@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notify</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+  <p>地震災情支援網</p>
+</header>
+<div id="buttons">
+  <%= link_to "New Post", new_event_path %>
+</div>
+
+<div id="wrapper">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+</div>
+<div id="wrapper">
+
+
+<%= yield %>
+
+</body>
+</html>
